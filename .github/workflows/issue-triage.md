@@ -103,6 +103,18 @@ Define when to recommend each suggested-team label:
 - suggested-team/support-triage
 -->
 
+Categorize the priority of the bug as follows:
+
+- priority/p0 - complete outage or unrecoverable loss
+- priority/p1 - blocking bug with no workaround
+- priority/p2 - low impact bug or major bug with workaround
+
+Suggested team routing:
+
+- `suggested-team/workflows` → `@example/workflows`
+- `suggested-team/developer-experience` → `@example/developer-experience`
+- `suggested-team/support-triage` → `@example/support-triage`
+
 ## 4. Find duplicates and related issues
 
 - A **duplicate** describes the same problem or request with strong supporting
@@ -128,8 +140,8 @@ Suggest one focused next step when the evidence supports it.
 
 ## 7. Report
 
-<!-- TODO 3:
 Define a concise maintainer-facing report containing:
+
 - a 1–2 sentence summary
 - type and priority with brief evidence
 - a suggested-team label and simulated inline-code team tag
@@ -140,4 +152,4 @@ Define a concise maintainer-facing report containing:
 For an incomplete issue, replace speculative classification with focused
 clarifying questions while retaining the routing recommendation and approval
 status when supported. Keep the entire comment under 300 words.
--->
+
